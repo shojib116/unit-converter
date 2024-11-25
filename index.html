@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Unit Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body class="light">
+    <main>
+      <div id="conversion-card">
+        <select id="color-scheme">
+          <option value="system">💻 System</option>
+          <option value="light">☀️ Light</option>
+          <option value="dark">🌙 Dark</option>
+        </select>
+        <div id="input-section">
+          <h1>Metric/Imperial Unit Conversion</h1>
+          <input type="number" id="input-el">
+          <button id="convert-btn">Convert</button>
+        </div>
+        <div id="output-section">
+          <div class="output-card">
+            <h2>Length (Meter/Feet)</h2>
+            <p id="length-output">
+              <span class="input-val"></span> meters = <span id="result-feet"></span> feet | <span class="input-val"></span> feet = <span id="result-meter"></span> meters
+            </p>
+          </div>
+          <div class="output-card">
+            <h2>Volume (Liters/Gallons)</h2>
+            <p id="volume-output">
+              <span class="input-val"></span> liters = <span id="result-gallon"></span> gallons | <span class="input-val"></span> gallons = <span id="result-liter"></span> liters
+            </p>
+          </div>
+          <div class="output-card">
+            <h2>Mass (Kilograms/Pounds)</h2>
+            <p id="mass-output ">
+              <span class="input-val"></span> kilos = <span id="result-pounds"></span> pounds | <span class="input-val"></span> pounds = <span id="result-kilos"></span> kilos
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

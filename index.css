@@ -1,0 +1,126 @@
+.dark {
+  --mainBGColor: #1C1C1C;
+  --topSectionBG: #6943FF;
+  --conversionCardBG: #1F2937;
+  --defaultTextColor: #FFFFFF;
+  --altTextColor: #CCC1FF;
+  --convertBtnTextColor: #3D3D3D;
+  --outputCardBG: #273549;
+  --inputBoxBorder: #B295FF;
+  --resultTxtColor: #FFFFFF;
+}
+
+.light {
+  --mainBGColor: #1C1C1C;
+  --topSectionBG: #6943FF;
+  --conversionCardBG: #F4F4F4;
+  --defaultTextColor: #FFFFFF;
+  --altTextColor: #5A537B;
+  --convertBtnTextColor: #3D3D3D;
+  --outputCardBG: #FFFFFF;
+  --inputBoxBorder: #B295FF;
+  --resultTxtColor: #353535;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  background-color: var(--mainBGColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#conversion-card {
+  width: 550px;
+  background-color: var(--conversionCardBG);
+  text-align: center;
+  position: relative;
+}
+
+#color-scheme {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 2px solid var(--inputBoxBorder);
+  background-color: var(--defaultTextColor);
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: var(--convertBtnTextColor);
+}
+
+#input-section {
+  background-color: var(--topSectionBG);
+  padding: 2rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input-section > h1 {
+  color: var(--defaultTextColor);
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  margin: 0 auto 30px auto;
+}
+
+#input-el {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  width: 117px;
+  height: 83px;
+  border: 2px solid var(--inputBoxBorder);
+  border-radius: 5px;
+  background: transparent;
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: inherit;
+  color: var(--defaultTextColor);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+#convert-btn {
+  background-color: var(--defaultTextColor);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: var(--convertBtnTextColor);
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+#output-section {
+  padding: 10px 0;
+}
+
+.output-card {
+  background-color: var(--outputCardBG);
+  border-top-left-radius: 5px;
+  padding: 1.25rem;
+  margin: 25px;
+}
+
+.output-card > h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--altTextColor);
+  margin-bottom: 0.5rem;
+}
+
+.output-card > p {
+  font-size: 0.875rem;
+  color: var(--resultTxtColor);
+}
